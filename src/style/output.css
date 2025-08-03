@@ -300,6 +300,9 @@
   body {
     cursor: none;
   }
+  section#desktop {
+    background-image: url(../../public/img/والپیپر-آبی-ویندوز-11-1024x576.jpg);
+  }
 }
 @layer components;
 @layer utilities;
