@@ -5,7 +5,7 @@
     cursor: none;
   }
   main{
-    background-image: url(../../public/img/والپیپر-آبی-ویندوز-11-1024x576.jpg);
+    background-image: url(/img/والپیپر-آبی-ویندوز-11-1024x576.jpg);
   }
 }
 @layer components{
