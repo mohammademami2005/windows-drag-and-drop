@@ -1,13 +1,38 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <main class=""></main>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+</head>
+
+<body>
+  <main class="flex w-full h-screen flex-wrap relative  overflow-hidden">
+    <!-- cursor  -->
+    <div id="cursor" class="rounded-full w-5 h-5 absolute pointer-events-none z-50 border border-white  transition-all duration-200 ease-out -translate-x-1/2 -translate-y-1/2"></div>
+    <div id="sCursor" class="w-1 h-1 z-40 transition-normal  rounded-full  bg-white absolute pointer-events-none -translate-x-1/2 -translate-y-1/2 transition-all duration-75 ease-out rounded-full "></div>
+    <!-- cursor  -->
+
+    <!-- desktop  -->
+    <section id="desktop"
+      class="h-[90vh] w-full flex flex-col justify-start gap-6 relative *:w-[50px] h-[50px] bg-cover bg-center bg-red-400 bg-[url(public/img/والپیپر-آبی-ویندوز-11-1024x576.jpg)]">
+      <div><img src="public/img/icons8-bin-windows-50.png" alt="bin"></div>
+      <div><img src="public/img/icons8-google-meet-50.png" alt="meet"></div>
+      <div><img src="public/img/icons8-telegram-app-50.png" alt="telegram"></div>
+      <div><img src="public/img/icons8-github-50.png" alt="github"></div>
+      <div><img src="public/img/YouTube_full-color_icon_(2017).svg" alt=""></div>
+      <div><img src="public/img/code-stable.png" alt=""></div>
+      <!-- <div><img src="" alt=""></div> -->
+    </section>
+    <!-- desktop  -->
+
+    <!-- taskbar  -->
+    <section class="w-full h-[10vh] border border-red-400 bg-[rgb(37,37,37)]"></section>
+    <!-- taskbar  -->
+  </main>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
 </html>
