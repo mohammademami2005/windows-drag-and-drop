@@ -1,8 +1,6 @@
 export default function cursor(params) {
     const bigCircle = document.querySelector("#cursor")
     const smallCircle = document.querySelector("#sCursor")
-    console.log(bigCircle , smallCircle);
-    
 
     window.addEventListener("mousemove", (e) => {
         let left = e.clientX

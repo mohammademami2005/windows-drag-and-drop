@@ -4,7 +4,7 @@
   body{
     cursor: none;
   }
-  section#desktop{
+  main{
     background-image: url(../../public/img/والپیپر-آبی-ویندوز-11-1024x576.jpg);
   }
 }
@@ -12,6 +12,12 @@
 
 }
 @layer utilities{
-
+  .back{
+    background-color: rgba(5, 5, 5, 0.322);
+    backdrop-filter: blur(50px);
+  }
+  .liBorder {
+    @apply border-b border-b-gray-400
+  }
 }
 @layer theme{}
