@@ -49,6 +49,14 @@ demo :https://windows-drag-and-drop.vercel.app/
 
 - 🚀 قابل توسعه برای ویژگی‌های آینده مثل باز شدن پنجره، ذخیره موقعیت، تم شب/روز و...
 
+
+## Teacher
+
+You can find my teacher's GitHub profile here:  
+[https://github.com/parsaGhorbanian](https://github.com/parsaGhorbanian)
+
+
+
 ## Run Locally
 
 Clone the project
