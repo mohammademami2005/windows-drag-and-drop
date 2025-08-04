@@ -24,7 +24,8 @@ demo :https://windows-drag-and-drop.vercel.app/
 
 ## Screenshots
 
-![App Screenshot](https://github.com/mohammademami2005/windows-drag-and-drop/issues/1#issue-3290767651)
+![screenshot]([https://user-images.githubusercontent.com/your-image.png](https://github.com/mohammademami2005/windows-drag-and-drop/issues/1#issue-3290767651))
+
 
 
 ## Features
