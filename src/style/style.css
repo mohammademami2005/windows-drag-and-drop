@@ -6,6 +6,8 @@
   }
   main{
     background-image: url(/img/والپیپر-آبی-ویندوز-11-1024x576.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 @layer components{

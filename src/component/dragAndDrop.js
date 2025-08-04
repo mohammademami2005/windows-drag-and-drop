@@ -1,15 +1,33 @@
 export default function dragAndDrop() {
     const figure = document.querySelectorAll("section#desktop >figure")
+    const desktop = document.querySelector("section#desktop")
+    let caption = document.querySelectorAll("section#desktop >figure > figcaption")
+    let img = document.querySelectorAll("section#desktop >figure > img")
+    caption.forEach((item) => {
+        item.classList.add("text-white", "text-sm", "block", "text-center")
+    })
+    img.forEach(item => item.classList.add("w-[50px]" , "h-[50px]" , "object-cover"))
+
 
 
     figure.forEach((item, i) => {
         let mouseX, mouseY, offsetX, offsetY;
 
-        let t = (i * 50) + (20 * i)
-        item.style.top = t + "px"
+        // چیدمان آیکون ها flexible
+        const desktopHeight = desktop.offsetHeight
+        const figureHeight = item.offsetHeight
+        const spacing = 55;
+        const itemsPerRow = Math.floor(desktopHeight / (figureHeight + spacing))
+        console.log(itemsPerRow);
+        
+        const row = Math.floor(i / itemsPerRow)
+        const col = i % itemsPerRow
+        let left = col * (figureHeight + spacing)
+        let top = row * (figureHeight + (spacing /2))
+        item.style.left = top + "px"
+        item.style.top = left + "px"
 
         item.addEventListener("mousedown", mouseDown);
-
 
         function mouseDown(e) {
             e.preventDefault();
