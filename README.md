@@ -7,9 +7,7 @@
 این پروژه یک رابط کاربری تعاملی از دسکتاپ ویندوز 11 است که با استفاده از HTML، CSS (Tailwind) و JavaScript توسعه داده شده. در این شبیه‌ساز تلاش شده تمام ویژگی‌های ظاهری و رفتاری دسکتاپ ویندوز 11 به‌صورت واقعی و روان در محیط مرورگر پیاده‌سازی شود.
 
 ✨ در این پروژه می‌توانید تجربه‌ای نزدیک به دسکتاپ واقعی داشته باشید، شامل:
-
 Drag & Drop آیکون‌ها با قابلیت برخورد و حذف
-
 منوی راست‌کلیک حرفه‌ای مشابه ویندوز
 
 نشانگر موس سفارشی با افکت‌های کلیک و حرکت
@@ -24,7 +22,7 @@ demo :https://windows-drag-and-drop.vercel.app/
 
 ## Screenshots
 
-![Desktop Screenshot](./screencapture-windows-drag-and-drop-vercel-app-2025-08-05-00_26_14.png)
+![Desktop Screenshot](.[/screencapture-windows-drag-and-drop-vercel-app-2025-08-05-00_26_14.png](https://github.com/mohammademami2005/windows-drag-and-drop/issues/1#issue-3290767651))
 
 
 
