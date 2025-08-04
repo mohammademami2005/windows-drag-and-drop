@@ -12,7 +12,7 @@
   <main class="flex w-full h-screen flex-wrap relative  overflow-hidden bg-[#252424]">
     <!-- desktop  -->
     <section id="desktop"
-      class="h-[90vh] w-full flex flex-col justify-start pl-2 pt-2 gap-6 relative *:absolute *:top-0 *:left-3 *:w-[50px] *:h-[50px] *:z-20 bg-cover bg-center ">
+      class="h-[92vh] w-full flex flex-col justify-start pl-2 pt-2 gap-6 relative *:absolute *:top-0 *:left-3 *:w-[50px] *:h-[50px] *:z-20 bg-cover bg-center ">
       <figure>
         <img src="/img/icons8-bin-windows-50.png" alt="bin">
         <figcaption>bin</figcaption>
@@ -25,7 +25,7 @@
         <img src="/img/icons8-telegram-app-50.png" alt="telegram">
         <figcaption>telegram</figcaption>
       </figure>
-      <figure>
+      <figure class="">
         <img src="/img/icons8-github-50.png" alt="github">
         <figcaption>github desktop</figcaption>
       </figure>
@@ -78,7 +78,44 @@
     <!-- desktop  -->
 
     <!-- taskbar  -->
-    <section class="w-full h-[10vh] back border"></section>
+    <section
+      class="w-full h-[8vh] back  flex justify-center items-center gap-6 *:h-[30px] *:w-[30px] *:*:w-full *:*:h-full *:*:object-cover">
+      <figure>
+        <img src="/img/icons8-windows-11-50.png" alt="meet" class="brightness-[1.5]">
+      </figure>
+      <figure class="flex justify-center items-center">
+        <svg class="rotate-180" width="30" height="30" viewBox="0 0 48 50" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <rect x="14" y="16" width="30" height="30" rx="3" fill="#E0E0E0" />
+          <rect x="4" y="5" width="30" height="30" rx="3" fill="#999999" />
+        </svg>
+      </figure>
+
+      <figure>
+        <img src="/img/code-stable.png" alt="" class="w-full h-full object-contain">
+      </figure>
+      <figure>
+        <img src="/img/icons8-telegram-app-50.png" alt="telegram">
+      </figure>
+      <!-- <figure>
+        <img src="/img/icons8-github-50.png" alt="github">
+      </figure> -->
+      <figure>
+        <img src="img/icons8-linkedin-50.png" alt="">
+      </figure>
+      <figure>
+        <img src="img/icons8-adobe-photoshop-50.png" alt="">
+      </figure>
+      <figure>
+        <img src="img/icons8-microsoft-edge-50.png" alt="">
+      </figure>
+      <figure>
+        <img src="img/icons8-microsoft-outlook-2019-50.png" alt="">
+      </figure>
+      <figure>
+        <img src="/img/icons8-google-meet-50.png" alt="meet">
+      </figure>
+    </section>
     <!-- taskbar  -->
 
     <!-- cursor  -->
@@ -92,15 +129,15 @@
 
     <!--window context menu  -->
     <ul id="windowContextMenu"
-      class="flex flex-col  p-2 back hidden absolute  z-20 w-[250px] h-[350px] text-pretty p-1  rounded-xl *:flex *:justify-start *:items-center *:h-[43px] *:w-full *:text-white ">
-      <li>view</li>
-      <li>sort by</li>
-      <li class="liBorder">refresh</li>
-      <li class="liBorder">new</li>
-      <li>display setting</li>
-      <li class="liBorder">personalize</li>
-      <li class="liBorder">open in terminal</li>
-      <li>show more options</li>
+      class="flex flex-col  p-2 back hidden absolute *:*:w-5 *:*:h-5 *:*:mr-4 *:*:text-white z-20 w-[250px] h-[350px] text-pretty p-1  rounded-xl *:flex *:justify-start *:items-center *:h-[43px] *:w-full *:text-white ">
+      <li><img src="public/img/contextmenu/icons8-view-all-30.webp" alt=""> view</li>
+      <li><img src="public/img/contextmenu/sort.webp" alt=""> sort by</li>
+      <li class="liBorder"><img src="public/img/contextmenu/icons8-reboot-30.webp" alt=""> refresh</li>
+      <li class="liBorder"><img src="public/img/contextmenu/plus.webp" alt=""> new</li>
+      <li><img src="public/img/contextmenu/icons8-monitor-30.webp" alt=""> display setting</li>
+      <li class="liBorder"><img src="public/img/contextmenu/icons8-calligraphy-brush-50.webp" alt=""> personalize</li>
+      <li class="liBorder"><img src="public/img/contextmenu/icons8-console-30.png" alt=""> open in terminal</li>
+      <li><img src="" alt=""> show more options</li>
     </ul>
     <!-- context menu  -->
   </main>

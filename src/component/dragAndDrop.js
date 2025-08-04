@@ -6,7 +6,9 @@ export default function dragAndDrop() {
     caption.forEach((item) => {
         item.classList.add("text-white", "text-sm", "block", "text-center")
     })
-    img.forEach(item => item.classList.add("w-[50px]" , "h-[50px]" , "object-cover"))
+    img.forEach(item => item.classList.add("w-[50px]", "h-[50px]", "object-cover"))
+
+
 
 
 
@@ -18,12 +20,10 @@ export default function dragAndDrop() {
         const figureHeight = item.offsetHeight
         const spacing = 55;
         const itemsPerRow = Math.floor(desktopHeight / (figureHeight + spacing))
-        console.log(itemsPerRow);
-        
         const row = Math.floor(i / itemsPerRow)
         const col = i % itemsPerRow
         let left = col * (figureHeight + spacing)
-        let top = row * (figureHeight + (spacing /2))
+        let top = row * (figureHeight + (spacing / 2))
         item.style.left = top + "px"
         item.style.top = left + "px"
 
@@ -54,6 +54,17 @@ export default function dragAndDrop() {
 
             item.style.left = mouseX + "px"
             item.style.top = mouseY + "px"
+
+            let x = parseInt(figure[0].style.left);
+            let y = parseInt(item.style.left);
+            console.log(x, y);
+
+            if (item !== figure[0] && Math.abs(x - y) < 10) {
+                item.classList.add( "transition" ,"duration-1000" ,"opacity-0")
+                setTimeout(() => {
+                    item.remove()
+                }, 1001);
+            }
         }
 
         function mouseUp() {
