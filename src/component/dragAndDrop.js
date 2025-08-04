@@ -55,21 +55,23 @@ export default function dragAndDrop() {
             item.style.left = mouseX + "px"
             item.style.top = mouseY + "px"
 
-            let x = parseInt(figure[0].style.left);
-            let y = parseInt(item.style.left);
-            console.log(x, y);
 
-            if (item !== figure[0] && Math.abs(x - y) < 10) {
-                item.classList.add( "transition" ,"duration-1000" ,"opacity-0")
-                setTimeout(() => {
-                    item.remove()
-                }, 1001);
-            }
         }
 
         function mouseUp() {
             window.removeEventListener("mousemove", mouseMove);
             window.removeEventListener("mouseup", mouseUp);
+
+            let x = parseInt(figure[0].style.left);
+            let y = parseInt(item.style.left);
+            console.log(x, y);
+
+            if (item !== figure[0] && Math.abs(x - y) < 10) {
+                item.classList.add("transition", "duration-1000", "opacity-0")
+                setTimeout(() => {
+                    item.remove()
+                }, 1001);
+            }
         }
     })
 
